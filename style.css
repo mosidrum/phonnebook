@@ -1,7 +1,155 @@
+/* Google fonr CDN link */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:wght@200;300;400;500;600;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-li {
+body {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.sideways {
+    height: 100%;
+    width: 240px;
+    background: #11101d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 6px 14px;
+}
+.sideways .logo_holder .logo {
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+}
+.logo_holder .logo i {
+    font-size: 28px;
+    margin-right: 5px;
+}
+.logo_holder .logo .logo_name {
+    font-size: 20px;
+    font-weight: 400;
+}
+.sideways #btn {
+    color: #fff;
+    position: absolute;
+    left: 90%;
+    top: 6px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%);
+}
+.sideways .logo_holder .ctn i {
+    font-size: 28px;
+    padding-left: 10px;
+    border-left: 10px;
+}
+.sideways .logo_holder .ctn a{
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
     text-decoration: none;
+    font-size: 18px;
+    padding-left: 0px;
+    background:#1d1b31;
+    border-radius: 10px;
+    text-align: center;
+}
+.sideways .logo_holder .ctn_name {
+    padding-left: 15px;
+}
+.sideways ul {
+    margin-top: 20px;
+}
+.sideways ul li {
+    list-style: none;
+    height: 50px;
+    width: 100%;
+    margin-top: 0 5px;
+    position: relative;
+}
+.sideways ul li a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.sideways ul li a:hover{
+    background: #fff;
+    color: #11101d;
+}
+.sideways ul li i {
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+.sideways ul li input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background: #1d1b31;
+    padding-left: 50px;
+    font-size: 18px;
+    color: #fff;
+}
+.sideways ul li .bx-search {
+    position: absolute;
+    z-index: 99;
+    color: #fff;
+    font-size: 22px;
+
+}
+.sideways .profile_content {
+    position: absolute;
+    color: #fff;
+    bottom: 0px;
+    left: 0;
+    font-size: 5px;
+}
+.sideways .profile_content .profile {
+    position: relative;
+    padding: 10px 6px;
+    height: 60px;
+}
+.sideways .profile_content .profile .profile_details {
+    display: flex;
+    align-items: center;
+}
+.profile .profile_details img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+.profile .profile_details .name_job {
+    margin-right: 10px;
+}
+.profile .profile_details .name {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: .7px;
+}
+.profile .profile_details .job {
+    font-size: 12px;
+    letter-spacing: .6px;
 }
