@@ -48,24 +48,12 @@ body {
     line-height: 50px;
     transform: translateX(-50%);
 }
-.sideways .logo_holder .ctn i {
+.sideways .ctn i {
     font-size: 28px;
     padding-left: 10px;
     border-left: 10px;
 }
-.sideways .logo_holder .ctn a{
-    color: #fff;
-    display: flex;
-    height: 50px;
-    width: 100%;
-    align-items: center;
-    text-decoration: none;
-    font-size: 18px;
-    padding-left: 0px;
-    background:#1d1b31;
-    border-radius: 10px;
-    text-align: center;
-}
+
 .sideways .logo_holder .ctn_name {
     padding-left: 15px;
 }
@@ -84,10 +72,12 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
+    margin-bottom: 0px;
 }
 .sideways ul li a:hover{
     background: #fff;
     color: #11101d;
+    border-radius: 20px;
 }
 .sideways ul li i {
     height: 50px;
@@ -109,13 +99,38 @@ body {
     padding-left: 50px;
     font-size: 18px;
     color: #fff;
+    margin-top: 0px;
 }
 .sideways ul li .bx-search {
     position: absolute;
     z-index: 99;
     color: #fff;
-    font-size: 22px;
+    font-size: 25px;
 
+}
+.sideways ul li {
+margin-top: 5px;
+}
+.sideways ul li .tooltip {
+    position: absolute;
+    left: 122px;
+    top: 0;
+    transform: translateY(-50%);
+    border-radius: 6px;
+    height: 35px;
+    width: 122px;
+    background: #fff;
+    line-height: 35px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0s;
+    opacity: 0;
+    pointer-events: none;
+}
+.sideways ul li:hover .tooltip{
+    top: 50%;
+    transition: all 0.5s ease;
+    opacity: 1;
 }
 .sideways .profile_content {
     position: absolute;
@@ -152,4 +167,23 @@ body {
 .profile .profile_details .job {
     font-size: 12px;
     letter-spacing: .6px;
+}
+
+
+
+
+
+
+
+.contact {
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 240px);
+    left: 240px;
+}
+.contact .contact-page {
+    font-size: 25px;
+    font-weight: 500;
+    color: #1d1b31;
+    margin: 12px;
 }
