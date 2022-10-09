@@ -11,8 +11,9 @@ body {
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
+    background: rgb(229, 228, 226);
 }
-.sideways {
+.sideways.active {
     height: 100%;
     width: 240px;
     background: #11101d;
@@ -21,8 +22,22 @@ body {
     left: 0;
     padding: 6px 14px;
 }
+.sideways.active .logo .logo_name {
+    color: white;
+    opacity: 1;
+}
+.sideways {
+    width: 75px;
+    background: #11101d;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 16px 14px;
+}
+
 .sideways .logo_holder .logo {
-    color: #fff;
+    color: rgb(6, 1, 20);
     display: flex;
     height: 50px;
     width: 100%;
@@ -31,15 +46,21 @@ body {
 .logo_holder .logo i {
     font-size: 28px;
     margin-right: 5px;
+    opacity: 0;
+}
+.sideways.active .logo_holder .logo i {
+    color: white;
+    opacity: 1;
 }
 .logo_holder .logo .logo_name {
     font-size: 20px;
     font-weight: 400;
+    opacity: 0;
 }
 .sideways #btn {
-    color: #fff;
+    color: rgb(255, 255, 255);
     position: absolute;
-    left: 90%;
+    padding-left: 40px;
     top: 6px;
     font-size: 20px;
     height: 50px;
@@ -48,14 +69,28 @@ body {
     line-height: 50px;
     transform: translateX(-50%);
 }
+.sideways.active #btn {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 80%;
+    top: 6px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%);
+}
+/*This the plus sign of adding contact*/
 .sideways .ctn i {
     font-size: 28px;
-    padding-left: 10px;
-    border-left: 10px;
+    padding-left: 0px;
+    border-left: 0px;
+    opacity: ;
 }
 
 .sideways .logo_holder .ctn_name {
-    padding-left: 15px;
+    padding-left: ;
 }
 .sideways ul {
     margin-top: 20px;
@@ -66,6 +101,7 @@ body {
     width: 100%;
     margin-top: 0 5px;
     position: relative;
+
 }
 .sideways ul li a {
     color: #fff;
@@ -73,6 +109,13 @@ body {
     align-items: center;
     text-decoration: none;
     margin-bottom: 0px;
+}
+/*name beside the plus sign of add contact*/
+.sideways ul li a .ctn_name {
+    opacity: 0;
+}
+.sideways.active ul li a .ctn_name {
+    opacity: 1;
 }
 .sideways ul li a:hover{
     background: #fff;
@@ -133,7 +176,7 @@ margin-top: 5px;
     opacity: 1;
 }
 .sideways .profile_content {
-    position: absolute;
+    position: fixed;
     color: #fff;
     bottom: 0px;
     left: 0;
@@ -147,6 +190,10 @@ margin-top: 5px;
 .sideways .profile_content .profile .profile_details {
     display: flex;
     align-items: center;
+    opacity: 0;
+}
+.sideways.active .profile_content .profile .profile_details {
+opacity: 1;
 }
 .profile .profile_details img {
     height: 40px;
@@ -180,6 +227,7 @@ margin-top: 5px;
     height: 100%;
     width: calc(100% - 240px);
     left: 240px;
+    background:
 }
 .contact .contact-page {
     font-size: 25px;
