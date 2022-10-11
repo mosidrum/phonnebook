@@ -246,7 +246,12 @@ opacity: 1;
     align-items: center;
     min-height: 100vh;
 }
-
+.form-container .con-header img {
+    height: 60px;
+    width: 60px;
+    margin-left: 120px;
+    margin-bottom: 30px;
+}
 .contact .form-container {
     background-color: white;
 	padding: 30px;
