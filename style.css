@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    background-color: steelblue;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+.mainContainer{
+    background: linear-gradient(to top, rgba(0,0,0,0.5)10%,rgba(0,0,0,0.5)10%), url(./images/bg.jpg);
+    padding: 50px;
+
+}
+.container1{
+    background-color: rgb(122, 179, 230);
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+.container2{
+    background-color: chartreuse;
+}
