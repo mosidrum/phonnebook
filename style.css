@@ -15,12 +15,34 @@ html, body{
 
 }
 .container1{
-    background-color: rgb(122, 179, 230);
+    background: transparent;
     width: 80%;
     margin: 0 auto;
     padding: 30px;
     border-radius: 10px;
+    background: linear-gradient(rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
 }
 .container2{
-    background-color: chartreuse;
+    background: transparent;
+    background: linear-gradient(rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+button{
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bolder;
+    /* border-radius: 5px transparent; */
+    border-radius: 10px;
+    border-color: rgb(36, 35, 35);
+}
+#btn1{
+    background-color: rgb(36, 35, 35);
+    color: rgb(206, 197, 197);
+    width: 150px;
+}
+#btn2{
+    background-color: rgb(36, 35, 35);
+    color: rgb(206, 197, 197);
 }
