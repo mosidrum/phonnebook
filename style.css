@@ -5,12 +5,14 @@
     padding: 0;
 }
 html, body{
-    background-color: steelblue;
+    /* background-color: steelblue; */
     min-height: 100vh;
     max-height: 100vh;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)10%,rgba(0,0,0,0.5)10%), url(./images/bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .mainContainer{
-    background: linear-gradient(to top, rgba(0,0,0,0.5)10%,rgba(0,0,0,0.5)10%), url(./images/bg.jpg);
     padding: 50px;
 
 }
@@ -20,12 +22,13 @@ html, body{
     margin: 0 auto;
     padding: 30px;
     border-radius: 10px;
+    color: white;
     background: linear-gradient(rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
 }
 .container2{
     background: transparent;
     background: linear-gradient(rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
     border-radius: 10px;
 }
@@ -42,7 +45,26 @@ button{
     color: rgb(206, 197, 197);
     width: 150px;
 }
+#btn1:hover{
+    background-color: rgb(77, 73, 73);
+    transition: .3s ease;
+    padding: 10px;
+}
 #btn2{
+    width: 100%;
     background-color: rgb(36, 35, 35);
     color: rgb(206, 197, 197);
+}
+#btn2:hover{
+    background-color: rgb(77, 73, 73);
+    transition: .3s ease;
+    padding: 10px;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5vh;
+    color: white;
 }
